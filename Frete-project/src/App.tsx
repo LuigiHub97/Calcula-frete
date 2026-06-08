@@ -53,7 +53,7 @@ export default function App() {
     setFreteEscolhido(null);
 
     try {
-      const res = await fetch('http://localhost:3001/api/frete/calcular', {
+      const res = await fetch('https://calcula-frete.onrender.com/api/frete/calcular', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
